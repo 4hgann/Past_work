@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    width:100%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.custom-background-color{
+    background-color: #2D572C;
+}
+
+.custom-color{
+    color: #2D572C;
+}
+
+a{
+    text-decoration: none;
+}
+
+a,button, span{
+    cursor:pointer;
+}
+
+.bodyWrapper{
+    margin-bottom: 10px;
+}
+
+.navBar{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.navImage{
+    float:left;
+    padding: 2px 0px 2px 20px;
+    height:64px;
+    width: 56px;
+}
+
+ul li {
+    float: left;
+
+    height: 50px;
+  }
+
+li a{
+    display: table-cell;
+    color: #fff;
+    text-align:center;
+    padding: 10px 16px;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 16pt;
+}
+
+.navTitle{
+    display: block;
+    color: #fff;
+    text-align:center;
+    padding: 10px 16px;
+    font-size: 22pt;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    font-size: 18pt;
+}
+
+li a:hover{
+    background-color: #2d472d;
+}
+
+.links{
+    float:right;
+}
+
+.imageContainer{
+    background-image: url("library.jpg");
+    padding-bottom:100px;
+    background-size: cover;
+}
+
+.heading{
+    width: 100%;
+    margin-top:70px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bigHeading{
+    font-size: 42pt;
+    margin: 0;
+}
+
+.subHeading{
+    font-size: 20pt;
+    margin: 0;
+    padding:15px;
+}
+
+.boxes{
+    margin: auto;
+    margin-top:100px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    display:flex;
+}
+
+.box{
+    width: 25%;
+    display: flex;
+    flex-direction:column;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+}
+
+.boxHeading{
+    font-size: 20pt;
+    margin:0 auto;
+}
+
+.boxHeading:after{
+    content: '';
+    width: 45px;
+    background-color: #fff;
+    height: 5px;
+    margin: 10px auto 10px;
+    display: block;
+    border-radius:1.5px;
+}
+
+.content{
+    text-align: none;
+    margin: 10px auto auto;
+}
+
+
+.boxButton{
+    background-color:#fff;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 15px 2px;
+    border-radius: 35px;
+}
+
+a:hover, .boxButton:hover{
+    background-color: #e6e6e6;
+}
+
+.footer{
+    font-size: 18pt;
+    text-align: center;
+    height: 50px;
+}
+
+/* Everything below this point is formatting and styling related to the pop-up registration form */
+
+.formHeader,.submitWrapper{
+    width:35%;
+    padding: 0px 30px;
+    margin:auto;
+    position:relative;
+}
+
+.formHeading{
+    font-family: 'Open Sans', sans-serif;
+    font-size:24pt;
+    padding: 15px 10px;
+    color:#fff;
+    text-align: center;
+    margin:auto;
+}
+
+.popupWrapper{
+
+    margin:auto;
+}
+
+.modal{
+    align-items: center;
+    justify-content: center;
+    display: none; /*The popup will start as hidden, this property will be edited in javascript when the trigger button is clicked*/
+    left: 0;
+    top: 0;
+    position: fixed;
+    height:100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(50,50,50,0.9);
+}
+
+.fieldWrappers{
+    padding: 20px 30px;
+    background-color: #fff;
+    width:35%;
+    margin:auto;
+    margin-bottom: 0px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+    background: #fff;
+    color:#000;
+    font-size:12pt;
+  }
+
+.exit {
+    position: absolute;
+    top:-10px;
+    right:7px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding:0px;
+    margin:auto;
+  }
+
+  label{
+      font-size: 12pt;
+      color:#000;
+  }
+
+.submitWrapper:hover, .submitWrapper:hover > .submit{
+    background-color:#134521;
+}
+
+.submit{
+    text-align: center;
+    color:#fff;
+    font-size:20pt;
+    width:100%;
+    border:none;
+    padding:15px 0px;
+}

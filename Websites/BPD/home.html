@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Book Program Discussion - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "style.css">
+<script src = "scripts.js"></script>
+<body class = "custom-background-color">
+
+<!-- Navigation bar - contains icon as well-->
+<div class = "bodyWrapper custom-background-color">
+    <div class ="navBar">
+        <div class = "navContent custom-background-color">
+            <a href = "#"><img src = "Logo.png" alt = "Book Program Discussion Logo" class = "navImage"/> </a>
+            <ul class = "navList">
+                <li class = "navTitle">Book Program Discussion</li>
+                <div class = "links">
+                    <li><a href = "#" class = "navLink custom-color" style = "background-color:#fff;">Home</a></li>
+                    <li><a href = "#" class = "navLink">About</a></li>
+                    <li><a href = "#" class = "navLink">FAQ</a></li>
+                    <li><a href = "#" class = "navLink">Contacts</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <!--An image is used as a background for most of the page-->
+    <div class = "imageContainer">
+        <!--A mostly opaque heading at the top-->
+        <div class = "heading">
+            <p class = "bigHeading custom-color">Book Program Discussion</p>
+            <p class = "subHeading custom-color">Helping you connect with others</p>
+        </div>
+        
+        <!--3 boxes sit in the middle of the page. They contain information about the website and one of them is another link to register.-->
+        <div class = "boxes">
+            <div class = "box custom-background-color">
+                <p class = "boxHeading">Borrow a book</p>
+                <p class = "content">
+                    If you're in need of another book to fill your need to read, Book Program Discussion offers an awesome lending service. You can search our database to find books that you might be interested and get them loaned to you absolutely free! Just make sure you're registered and we'll be in contact as soon as that book is available for you. To search the database, click the button below.
+                </p>
+                <a class = "boxButton custom-color" href = "#">Search now</a>
+            </div>
+
+            <div class = "box custom-background-color">
+                <p class = "boxHeading">First time here?</p>
+                <p class = "content">
+                    First time here? Not a problem! Book Program Discussion offers an easy to use registration service where you fill in basic details about yourself and you get a free account. This account will give you access to so many features such as book borrowing and even finding other readers like yourself, all with the click of a button. Register for your free account now by clicking the button below.
+                </p>
+                <button class = "boxButton custom-color" href = "#" id = "trigger-modal" onclick = "openForm(bookclubrego)"> Register now</button>
+            </div>
+
+            <div class = "box custom-background-color">
+                <p class = "boxHeading">More about Us</p>
+                <p class = "content">
+                    Book Program Discussion was initially brought about by people very similar to you! The founders were avid readers that wanted to meet other people with the same hobby as them. With their combined skills and effort, they eventually managed to compile a large number of books they could lend out to people like you. Thanks to our founders, BPD was born! Read more below.
+                </p>
+                <a class = "boxButton custom-color" href = "#">About Us</a>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+    <div id ="bookclubrego" class ="modal">
+        
+        <form class = "popup">
+            <div class = "popupWrapper">
+                <div class = "formHeader custom-background-color" id = 'header'>
+                    <div class = "exitWrapper">
+                        <span onclick = 'exit(bookclubrego)' class="exit" title="Exit">&times;</span>
+                    </div>
+                    <p class = formHeading>Registration Form</p>
+                </div>
+
+                <div class = "fieldWrappers" id = 'fields'>
+                    <div id = "userDetails">
+                        <label for ="fName">Given Name</label> <br/>
+                        <input type="text" placeholder="First Name e.g. John" name="fName" required>
+
+                        <label for ="lName">Surname</label><br/>
+                        <input type="text" placeholder="Last Name e.g. Smith" name="lName" required>
+            
+                        <label for ="uName">Username</label><br/>
+                        <input type="text" placeholder="Username e.g. Jsmith123" name="uName" required>
+            
+                        <label for ="pw">Password</label><br/>
+                        <input type="password" placeholder="Password" name="pw" required>
+                    </div>
+
+                    <div id = "addresses">
+
+                        <label for ="home">Home Address</label>
+                        <input type="text" placeholder="e.g. 123 Grover Lane" name="home" required>
+
+                        <label for ="work">Work Address</label>
+                        <input type="text" placeholder="e.g. 456 Queen Street" name="work" required>
+
+                    </div>
+
+                    <div id = "contacts">
+
+                        <label for ="mobile">Mobile Number</label>
+                        <input type="text" placeholder="e.g. 021 123 456" name="mobile" required>
+
+                        <label for ="email">Email</label>
+                        <input type="text" placeholder="e.g. jsmith123@gmail.com" name="email" required>
+                    </div>
+                </div>
+
+                <div class = "submitWrapper custom-background-color" id = 'button'>
+                    <button class = "submit custom-background-color" href = '#' onclick = 'closeForm(bookclubrego)'>Submit</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <p class ="custom-background-color">&copy Book Program Discussion 2021</p>
+</footer>
+
+
+</html>
+
