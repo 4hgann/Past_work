@@ -3,6 +3,7 @@
 I have included below a summary of the various languages that I have used and an overview of the projects these langauges have been used to complete
 
 **Personal Projects**
+
 I have made a text editor using Tkinter in Python. This includes the ability to save and open files. It is a fairly barebones text editor.
 
 I used HTML, CSS and JS to produce a countdown timer to my birthday (9th March).
